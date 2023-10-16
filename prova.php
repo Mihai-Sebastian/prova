@@ -1,2 +1,12 @@
-<?php
-echo "hello world";
+
+
+<html>
+
+    <form>
+        $nom= <input><?php
+        echo "hello world";
+        ?>
+
+    </form>
+
+</html>
