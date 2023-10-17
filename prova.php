@@ -1,23 +1,23 @@
-
-
 <html>
+<body>
+<?php
+function suma($edat, $i){
+    return $edat +$i;
+}
+echo 'Hola' . $_POST['nom']; echo '<br>';
+echo 'Tens ' . (int)$_POST['edat'] . ' anys.';
+$edat = $_POST['edat'];
 
-    <form  method="post" >
-        nom: <input type="text" name="nom" value="" placeholder="Indica el teu nom">
-        edat: <input type="number" name="edat" value="" placeholder="Indica la teva edat">
-    </form>
-
-    <?php
-
-    $nom = $_POST['nom'];
-    $edat = $_POST['edat'];
-
-    echo " El teu nom és: $nom";
-    $i=1;
-    while($i <= $edat){
-        echo $i;
-        $i++;
+$i=1;
+while ($i <= 10){
+    $edatFutura = suma($edat, $i);
+    if ($i===1){
+        echo "<br>En <b>$i</b> any tindràs " . "<b>$edatFutura</b>" . ' anys';
+    } else{
+        echo "<br>En <b>$i</b> anys tindràs " . "<b>$edatFutura</b>" . ' anys';
     }
-    ?>
-
+    $i++;
+}
+?>
+</body>
 </html>
