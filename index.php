@@ -1,11 +1,4 @@
-<html>
-<body>
+<?php
 
-<form method="post" action="prova.php">
-    Nom: <input type="text" name="nom"><br>
-    Edat: <input type="number" name="edat"><br>
-    <input type="submit">
-</form>
-
-</body>
-</html>
+require 'app/index.php';
+require 'resources/views/index.blade.php';
