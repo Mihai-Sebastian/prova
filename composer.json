@@ -1,6 +1,23 @@
 {
-    "require": {
-        "vlucas/phpdotenv": "^5.5",
-      "ext-pdo": "*"
+  "name": "alumne/prova",
+  "type": "project",
+  "autoload": {
+    "classmap": [
+      "./"
+    ],
+    "files": [
+      "framework/helpers.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "sebastian",
+      "email": "mburghele@iesebre.com"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.5",
+    "ext-pdo": "*",
+    "ext-http": "*"
     }
 }

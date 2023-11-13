@@ -7,13 +7,7 @@
 
 </head>
 <body>
-<h1><?=$greeting;?></h1>
-
+<h1>{{$greeting}}></h1>
+<p>Prova xivato = <?=dd($tasks)?></p>
 </body>
-
-
-
-
-
-
 </html>
